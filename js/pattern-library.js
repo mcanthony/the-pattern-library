@@ -33,7 +33,7 @@ function App() {
                             '<a href="http://twitter.com/%creatorTwitter%" target="_blank">@%creatorTwitter%</a></span>' +
                         '</h2>' + 
                         '<div class="download">' +
-                            '<a href="./img/%file%" download="%downloadName%" target="_blank">' +
+                            '<a href="%file%" download="%downloadName%" target="_blank">' +
                                 '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.5px" height="31.5px" viewBox="-1.51 8.919 31.5 31.5" enable-background="new -1.51 8.919 31.5 31.5" xml:space="preserve">' + 
                                     '<circle fill="none" stroke="#E37070" stroke-width="1.5" stroke-miterlimit="10" cx="14.24" cy="24.669" r="15"/>' + 
                                     '<path fill="#E37070" d="M18.522,25.65c-0.296-0.295-0.786-0.295-1.082,0l-2.456,2.438v-7.92c0-0.412-0.323-0.745-0.737-0.745 c-0.413,0-0.737,0.334-0.737,0.745v7.94l-2.473-2.464c-0.295-0.296-0.772-0.296-1.069,0c-0.295,0.294-0.294,0.771,0.001,1.065 l3.676,3.664c0.02,0.023,0.038,0.053,0.062,0.074c0.189,0.189,0.454,0.255,0.697,0.202c0.036-0.006,0.069-0.02,0.104-0.031 c0.007-0.002,0.014-0.003,0.021-0.005c0.122-0.047,0.228-0.126,0.31-0.226l3.686-3.673C18.818,26.423,18.818,25.945,18.522,25.65z" />' + 
@@ -49,11 +49,10 @@ function App() {
             '</div>' +
         '</section>'
 
-    var imageDir = './img/';
     var patternData = [
         {
             letter: 'a',
-            file: 'a.jpg',
+            file: 'http://i.imgur.com/hH0upNX.jpg',
             name: 'Kale Salad',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -61,7 +60,7 @@ function App() {
         },
         {
             letter: 'b',
-            file: 'b.jpg',
+            file: 'http://i.imgur.com/PIJWrEi.jpg',
             name: 'Fancy Pants',
             creator: 'Anton Repponen',
             creatorWeb: 'http://repponen.com',
@@ -69,7 +68,7 @@ function App() {
         },
         {
             letter: 'c',
-            file: 'c.jpg',
+            file: 'http://i.imgur.com/pJewmf8.jpg',
             name: 'Ripples',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -77,7 +76,7 @@ function App() {
         },
         {
             letter: 'd',
-            file: 'd.png',
+            file: 'http://i.imgur.com/KCa8KHY.png',
             name: 'Leather Nunchuck',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -85,7 +84,7 @@ function App() {
         },
         {
             letter: 'h',
-            file: 'h.jpg',
+            file: 'http://i.imgur.com/oavv3DC.jpg',
             name: 'Chalkboard',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -93,7 +92,7 @@ function App() {
         },
         {
             letter: 'l',
-            file: 'l.jpg',
+            file: 'http://i.imgur.com/BFlh0FX.jpg',
             name: 'Fiesta',
             creator: 'Julien Bailly',
             creatorWeb: 'http://julien-bailly.com/',
@@ -101,7 +100,7 @@ function App() {
         },
         {
             letter: 'm',
-            file: 'm.jpg',
+            file: 'http://i.imgur.com/XXArRX5.jpg',
             name: 'Knitting',
             creator: 'Julien Bailly',
             creatorWeb: 'http://julien-bailly.com/',
@@ -109,7 +108,7 @@ function App() {
         },
         {
             letter: 'p',
-            file: 'p.gif',
+            file: 'http://i.imgur.com/jIqriao.gif',
             name: 'Brijan',
             creator: 'Brijan Powel',
             creatorWeb: 'http://www.robothate.com',
@@ -117,7 +116,7 @@ function App() {
         },
         {
             letter: 'q',
-            file: 'q.png',
+            file: 'http://i.imgur.com/ikxbnvc.png',
             name: 'Naranjas',
             creator: 'Natalia de Frutos',
             creatorWeb: 'http://www.domestika.org/es/natalia_f_ramos/portfolio',
@@ -125,7 +124,7 @@ function App() {
         },
         {
             letter: 'r',
-            file: 'r.png',
+            file: 'http://i.imgur.com/GrxcU65.png',
             name: 'Kiwis',
             creator: 'Natalia de Frutos',
             creatorWeb: 'http://www.domestika.org/es/natalia_f_ramos/portfolio',
@@ -133,7 +132,7 @@ function App() {
         },
         {
             letter: 's',
-            file: 's.png',
+            file: 'http://i.imgur.com/6F6eAzr.png',
             name: 'Cuadros',
             creator: 'Natalia de Frutos',
             creatorWeb: 'http://www.domestika.org/es/natalia_f_ramos/portfolio',
@@ -141,7 +140,7 @@ function App() {
         },
         {
             letter: 'j',
-            file: 'j.jpg',
+            file: 'http://i.imgur.com/kqvmLut.jpg',
             name: 'Maze',
             creator: 'Julien Bailly',
             creatorWeb: 'http://julien-bailly.com/',
@@ -149,7 +148,7 @@ function App() {
         },
         {
             letter: 't',
-            file: 't.gif',
+            file: 'http://i.imgur.com/mUZX8ED.gif',
             name: 'Cocina',
             creator: 'Natalia de Frutos',
             creatorWeb: 'http://www.domestika.org/es/natalia_f_ramos/portfolio',
@@ -157,7 +156,7 @@ function App() {
         },
         {
             letter: 'u',
-            file: 'u.png',
+            file: 'http://i.imgur.com/IuijDCu.png',
             name: 'Wild Sea',
             creator: 'Henry Daubrez',
             creatorWeb: 'http://www.dogstudio.be',
@@ -165,7 +164,7 @@ function App() {
         },
         {
             letter: 'v',
-            file: 'v.png',
+            file: 'http://i.imgur.com/HMsJMTw.png',
             name: 'The Illusionist',
             creator: 'Henry Daubrez',
             creatorWeb: 'http://www.dogstudio.be',
@@ -173,7 +172,7 @@ function App() {
         },
         {
             letter: 'x',
-            file: 'x.png',
+            file: 'http://i.imgur.com/ELlr6WF.png',
             name: 'Magnus 2050',
             creator: 'Kristoffer Brady',
             creatorWeb: 'http://www.egosmoke.com',
@@ -181,7 +180,7 @@ function App() {
         },
         {
             letter: 'y',
-            file: 'y.png',
+            file: 'http://i.imgur.com/X9qZsHG.png',
             name: 'Magnus 2051',
             creator: 'Kristoffer Brady',
             creatorWeb: 'http://www.egosmoke.com',
@@ -189,7 +188,7 @@ function App() {
         },
         {
             letter: 'z',
-            file: 'z.png',
+            file: 'http://i.imgur.com/0U1ILIz.png',
             name: 'Magnus 2052',
             creator: 'Kristoffer Brady',
             creatorWeb: 'http://www.egosmoke.com',
@@ -197,7 +196,7 @@ function App() {
         },
         {
             letter: 'aa',
-            file: 'aa.png',
+            file: 'http://i.imgur.com/SGrQ4Cb.png',
             name: 'NYC Candy',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -205,7 +204,7 @@ function App() {
         },
         {
             letter: 'af',
-            file: 'af.png',
+            file: 'http://i.imgur.com/e5e6dqT.png',
             name: 'Bunting flag',
             creator: 'Raul Varela',
             creatorWeb: 'http://shonen.me',
@@ -213,7 +212,7 @@ function App() {
         },
         {
             letter: 'ag',
-            file: 'ag.jpg',
+            file: 'http://i.imgur.com/tkKlzYz.jpg',
             name: 'Canvas Orange',
             creator: 'Raul Varela',
             creatorWeb: 'http://shonen.me',
@@ -221,7 +220,7 @@ function App() {
         },
         {
             letter: 'ah',
-            file: 'ah.png',
+            file: 'http://i.imgur.com/EhYKSby.png',
             name: 'Bicycles',
             creator: 'Shaun Fox',
             creatorWeb: 'http://shaunfox.com',
@@ -229,7 +228,7 @@ function App() {
         },
         {
             letter: 'ai',
-            file: 'ai.png',
+            file: 'http://i.imgur.com/CU0Ma3o.png',
             name: 'Hodgepodge',
             creator: 'Anatoliy Gromov',
             creatorWeb: 'http://agromov.com',
@@ -237,7 +236,7 @@ function App() {
         },
         {
             letter: 'ak',
-            file: 'ak.png',
+            file: 'http://i.imgur.com/4UIO0Vq.png',
             name: 'Retro Furnish',
             creator: 'Heury & Heury',
             creatorWeb: 'http://heuryandheury.eu',
@@ -245,7 +244,7 @@ function App() {
         },
         {
             letter: 'ap',
-            file: 'ap.jpg',
+            file: 'http://i.imgur.com/9SSLfCT.jpg',
             name: 'Jade',
             creator: 'Jade Meneguel',
             creatorWeb: 'http://portfolio.jademeneguel.com',
@@ -253,7 +252,7 @@ function App() {
         },
         {
             letter: 'aq',
-            file: 'aq.jpg',
+            file: 'http://i.imgur.com/2Nrxex6.jpg',
             name: 'Plaid',
             creator: 'Alexey Tretina',
             creatorWeb: 'http://www.tretina.ru',
@@ -261,7 +260,7 @@ function App() {
         },
         {
             letter: 'ar',
-            file: 'ar.png',
+            file: 'http://i.imgur.com/chDA7UY.png',
             name: 'Kitty',
             creator: 'Penny Yu',
             creatorWeb: null,
@@ -269,7 +268,7 @@ function App() {
         },
         {
             letter: 'az',
-            file: 'az.png',
+            file: 'http://i.imgur.com/SewsoQ6.png',
             name: 'Quake',
             creator: 'Nina Geometrieva',
             creatorWeb: 'https://www.behance.net/ninageo',
@@ -277,7 +276,7 @@ function App() {
         },
         {
             letter: 'ba',
-            file: 'ba.jpg',
+            file: 'http://i.imgur.com/8Y6dQGb.jpg',
             name: 'Flowers',
             creator: 'Débora Sayuri',
             creatorWeb: 'www.behance.net/deborasayuri',
@@ -285,7 +284,7 @@ function App() {
         },
         {
             letter: 'bc',
-            file: 'bc.png',
+            file: 'http://i.imgur.com/NH1nLsV.png',
             name: 'Science',
             creator: 'Fabricio Marques',
             creatorWeb: 'http://fabric8.de',
@@ -296,7 +295,7 @@ function App() {
     slowPatternData = [
         {
             letter: 'ay',
-            file: 'ay.jpg',
+            file: 'http://i.imgur.com/d2awmPs.jpg',
             name: 'Hotdogs',
             creator: 'Román Jusdado',
             creatorWeb: 'http://www.romanjusdado.com',
@@ -304,7 +303,7 @@ function App() {
         },
         {
             letter: 'ax',
-            file: 'ax.jpg',
+            file: 'http://i.imgur.com/S5bKt4s.jpg',
             name: 'Design Tools',
             creator: 'Miguel Angel Avila',
             creatorWeb: 'http://dribbble.com/geeklangel',
@@ -312,7 +311,7 @@ function App() {
         },
         {
             letter: 'aw',
-            file: 'aw.png',
+            file: 'http://i.imgur.com/dWsDBpV.png',
             name: 'Green Goblin',
             creator: 'Dmitry Grigorev',
             creatorWeb: 'http://dgrigoriev.com/index.php/info',
@@ -320,7 +319,7 @@ function App() {
         },
         {
             letter: 'av',
-            file: 'av.gif',
+            file: 'http://i.imgur.com/tM2Dqxs.gif',
             name: 'raspberry lace',
             creator: 'Ana Novakovic',
             creatorWeb: 'http://ananovakovicdesign.com/',
@@ -328,7 +327,7 @@ function App() {
         },
         {
             letter: 'au',
-            file: 'au.jpg',
+            file: 'http://i.imgur.com/fOPjgJ8.jpg',
             name: 'Isometropolis',
             creator: 'Alan Geraghty',
             creatorWeb: 'http://cargocollective.com/tigerpixel',
@@ -336,7 +335,7 @@ function App() {
         },
         {
             letter: 'g',
-            file: 'g.gif',
+            file: 'http://i.imgur.com/r7Z09Ht.gif',
             name: 'Alchemy',
             creator: 'Anton Repponen',
             creatorWeb: 'http://repponen.com',
@@ -344,7 +343,7 @@ function App() {
         },
         {
             letter: 'n',
-            file: 'n.jpg',
+            file: 'http://i.imgur.com/LXmxZKh.jpg',
             name: 'Special Delivery',
             creator: 'Matt Delbridge',
             creatorWeb: 'http://mattdelbridge.com/',
@@ -352,7 +351,7 @@ function App() {
         },
         {
             letter: 'i',
-            file: 'i.jpg',
+            file: 'http://i.imgur.com/uLrWbwC.jpg',
             name: 'White Wood',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -360,7 +359,7 @@ function App() {
         },
         {
             letter: 'ab',
-            file: 'ab.png',
+            file: 'http://i.imgur.com/00Xz2dL.png',
             name: 'Sushi',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -368,7 +367,7 @@ function App() {
         },
         {
             letter: 'o',
-            file: 'o.jpg',
+            file: 'http://i.imgur.com/2T3gAGY.jpg',
             name: 'Junk Mail',
             creator: 'Matt Delbridge',
             creatorWeb: 'http://mattdelbridge.com/',
@@ -376,7 +375,7 @@ function App() {
         },
         {
             letter: 'e',
-            file: 'e.png',
+            file: 'http://i.imgur.com/Mw8xBU4.png',
             name: 'Escape Flight',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -384,7 +383,7 @@ function App() {
         },
         {
             letter: 'ac',
-            file: 'ac.png',
+            file: 'http://i.imgur.com/syudJMa.png',
             name: 'Subway Lines',
             creator: 'Marc Anderson',
             creatorWeb: 'http://www.marcbanderson.com/',
@@ -392,7 +391,7 @@ function App() {
         },
         {
             letter: 'w',
-            file: 'w.png',
+            file: 'http://i.imgur.com/ELlr6WF.png',
             name: '輪紋',
             creator: 'Daniel Marcos Perujo',
             creatorWeb: 'http://www.peruho.com/',
@@ -400,7 +399,7 @@ function App() {
         },
         {
             letter: 'f',
-            file: 'f.jpg',
+            file: 'http://i.imgur.com/6ghgesn.jpg',
             name: 'Dark Wood',
             creator: 'Claudio Guglieri',
             creatorWeb: 'http://whydontwetry.com',
@@ -408,7 +407,7 @@ function App() {
         },
         {
             letter: 'ae',
-            file: 'ae.jpg',
+            file: 'http://i.imgur.com/i3OA2PJ.jpg',
             name: 'Ocean',
             creator: 'Jon Vlasach',
             creatorWeb: 'http://colectiv.com/',
@@ -416,7 +415,7 @@ function App() {
         },
         {
             letter: 'am',
-            file: 'am.jpg',
+            file: 'http://i.imgur.com/FLBxjBd.jpg',
             name: 'Guglieri Speciale',
             creator: 'Jon Vlasach',
             creatorWeb: 'http://colectiv.com/',
@@ -424,7 +423,7 @@ function App() {
         },
         {
             letter: 'aj',
-            file: 'aj.png',
+            file: 'http://i.imgur.com/OzExPUf.png',
             name: 'Geometrica',
             creator: 'Guy Moorhouse',
             creatorWeb: 'http://futurefabric.co.uk',
@@ -432,7 +431,7 @@ function App() {
         },
         {
             letter: 'al',
-            file: 'al.png',
+            file: 'http://i.imgur.com/hCrSRTN.png',
             name: 'Glitch',
             creator: 'Tim Green',
             creatorWeb: 'http://destroywerk.com',
@@ -440,7 +439,7 @@ function App() {
         },
         {
             letter: 'an',
-            file: 'an.jpg',
+            file: 'http://i.imgur.com/jGIGWOA.jpg',
             name: 'Asteroids',
             creator: 'Sanja Kusturica',
             creatorWeb: 'http://noumevon.com',
@@ -448,7 +447,7 @@ function App() {
         },
         {
             letter: 'ao',
-            file: 'ao.gif',
+            file: 'http://i.imgur.com/07t2mb2.gif',
             name: 'Shattered Island',
             creator: 'Julien Renvoye',
             creatorWeb: 'http://www.julienrenvoye.com/',
@@ -456,7 +455,7 @@ function App() {
         },
         {
             letter: 'as',
-            file: 'as.gif',
+            file: 'http://i.imgur.com/4NiBrXs.gif',
             name: 'Neon Autumn',
             creator: 'Dailey Crafton',
             creatorWeb: 'http://daileycrafton.com',
@@ -464,7 +463,7 @@ function App() {
         },
         {
             letter: 'at',
-            file: 'at.png',
+            file: 'http://i.imgur.com/DRfPiqM.png',
             name: 'Celebration',
             creator: 'Prabhu Kandavelu',
             creatorWeb: null,
@@ -472,7 +471,7 @@ function App() {
         },
         {
             letter: 'bb',
-            file: 'bb.jpg',
+            file: 'http://i.imgur.com/Chl8GSo.jpg',
             name: 'Ahoy',
             creator: 'Lorena G',
             creatorWeb: 'http://behance.net/lorena-g',
@@ -578,7 +577,7 @@ function App() {
             callback();
         };
 
-        image.src = imageDir + data.file;
+        image.src = data.file;
     }
 
     var loadSmall = function() {
@@ -693,12 +692,12 @@ function App() {
         // Set background image... not the template way :S
         pane = $( pane );
         $( '.letter', pane ).css({
-            'background-image': 'url("' + imageDir + data.file + '")'
+            'background-image': 'url("' + data.file + '")'
         })
 
         // Set tile background
         $( '.tile.' + data.letter ).css({
-            'background-image': 'url("' + imageDir + data.file + '")'
+            'background-image': 'url("' + data.file + '")'
         })
 
         if ( data.creatorTwitter === null ) {
